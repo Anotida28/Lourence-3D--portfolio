@@ -16,7 +16,7 @@ const Hero = () => {
   });
 
   return (
-    <section id="hero" className="relative overflow-hidden">
+    <section id="hero" className="relative overflow-hidden" style={{ background: "radial-gradient(ellipse 80% 60% at 50% 0%, #1a2e50 0%, #080f1e 65%)" }}>
       <div className="absolute top-0 left-0 z-10">
         <img src="/images/bg.png" alt="" /> 
       </div>
@@ -50,11 +50,14 @@ const Hero = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-            Hi, I’m Lourence Ruhwaya,a Developer 
-              based in Zimbabwe with a passion for
-              Code.
-            </p>
+            <div className="flex flex-col gap-2 max-w-lg relative z-10 pointer-events-none">
+              <p className="text-white-50 md:text-xl">
+                Hi, I’m Lourence Ruhwaya — a full-stack developer and CS student at NUST Zimbabwe, building web apps, AI tools, and cloud systems.
+              </p>
+              <p className="text-white-50 md:text-xl">
+                Passionate about cybersecurity and crafting software that solves real problems.
+              </p>
+            </div>
 
             <Button
               text="See My Work"

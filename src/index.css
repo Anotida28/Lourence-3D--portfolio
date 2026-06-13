@@ -3,13 +3,14 @@
 
 :root {
   --gradient: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
+  --bg: #080f1e;
 }
 
 html,
 body {
   width: 100dvw;
   overflow-x: hidden;
-  background-color: black;
+  background-color: var(--bg);
   color: white;
   scroll-behavior: smooth;
   font-family: "Mona Sans", sans-serif;
@@ -22,11 +23,11 @@ section {
 @theme {
   --font-sans: "Mona Sans", sans-serif;
   --color-white-50: #d9ecff;
-  --color-black-50: #1c1c21;
-  --color-black-100: #0e0e10;
-  --color-black-200: #282732;
-  --color-blue-50: #839cb5;
-  --color-blue-100: #2d2d38;
+  --color-black-50: #1a2840;
+  --color-black-100: #0d1929;
+  --color-black-200: #1e2d42;
+  --color-blue-50: #8baecf;
+  --color-blue-100: #0f1f30;
 }
 
 @layer utilities {
@@ -106,7 +107,7 @@ section {
     @apply fixed w-full left-1/2 py-5 px-5 md:px-20 -translate-x-1/2 z-[100] transition-all duration-300 ease-in-out;
 
     &.scrolled {
-      @apply top-0 bg-black;
+      @apply top-0 bg-[#080f1e];
     }
 
     &.not-scrolled {
@@ -243,7 +244,7 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-[#080f1e];
   }
 
   .timeline-logo {
@@ -259,7 +260,7 @@ section {
   }
 
   .tech-card-animated-bg {
-    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#2D3240] group-hover:bottom-0 transition-all duration-700;
+    @apply absolute left-0 bottom-[-100%] w-full h-full bg-[#1a2e4a] group-hover:bottom-0 transition-all duration-700;
   }
 
   .tech-card-content {
@@ -378,10 +379,10 @@ section {
 
 .gradient-edge:nth-of-type(1) {
   left: 0;
-  background: rgb(0, 0, 0);
+  background: rgb(8, 15, 30);
   background: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 1) 0%,
+    rgba(8, 15, 30, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
@@ -389,7 +390,7 @@ section {
   right: 0;
   background: linear-gradient(
     -90deg,
-    rgba(0, 0, 0, 1) 0%,
+    rgba(8, 15, 30, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
 }
