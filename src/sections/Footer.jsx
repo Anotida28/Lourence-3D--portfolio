@@ -7,11 +7,18 @@ const Footer = () => {
         <div className="flex flex-col justify-center">
           <p>Terms & Conditions</p>
         </div>
-        <div className="socials">
+        <div className="socials flex-wrap">
           {socialImgs.map((socialImg, index) => (
-            <div key={index} className="icon">
-              <img src={socialImg.imgPath} alt="social icon" />
-            </div>
+            <a
+              key={index}
+              href={socialImg.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={socialImg.name}
+              className="icon"
+            >
+              <img src={socialImg.imgPath} alt={socialImg.name} className="size-5 object-contain" />
+            </a>
           ))}
         </div>
         <div className="flex flex-col justify-center">

@@ -59,11 +59,22 @@ const Hero = () => {
               </p>
             </div>
 
-            <Button
-              text="See My Work"
-              className="md:w-80 md:h-16 w-60 h-12"
-              id="counter"
-            />
+            <div className="flex flex-col gap-3">
+              <Button
+                text="Download CV"
+                className="md:w-60 md:h-16 w-full h-12"
+                href="/Lourence-Ruhwaya-CV.pdf"
+                download
+              />
+              <div className="flex items-center gap-2 text-white-50 text-sm">
+                <span>Scroll to explore</span>
+                <img
+                  src="/images/arrow-down.svg"
+                  alt="scroll down"
+                  className="size-4 animate-bounce"
+                />
+              </div>
+            </div>
           </div>
         </header>
 

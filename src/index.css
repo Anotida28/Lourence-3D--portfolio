@@ -104,7 +104,7 @@ section {
   }
 
   .hero-3d-container {
-    @apply xl:w-[48%] w-full xl:h-[70vh] h-[50vh] flex-none rounded-3xl overflow-hidden cursor-grab;
+    @apply xl:w-[48%] w-full xl:h-[70vh] md:h-[50vh] h-[40vh] flex-none rounded-3xl overflow-hidden cursor-grab;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(255, 255, 255, 0.08);

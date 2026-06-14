@@ -13,7 +13,7 @@ const navLinks = [
   },
   {
     name: "Certifications",
-    link: "#testimonials",
+    link: "#certifications",
   },
 ];
 
@@ -29,46 +29,29 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 1, suffix: "+", label: "Year Industry Experience" },
-  { value: 30, suffix: "+", label: "Integrations Supported" },
-  { value: 5, suffix: "+", label: "Systems Built & Deployed" },
+  { value: 1, suffix: "+", label: "Year Industry Experience (Old Mutual)" },
+  { value: 30, suffix: "+", label: "Bank & Payment Integrations Built" },
+  { value: 5, suffix: "+", label: "Full-Stack Systems Built & Deployed" },
   { value: 2, suffix: "", label: "Internships Completed" },
 ];
 
 const logoIconsList = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-  },
+  { imgPath: "/images/logos/react.png" },
+  { imgPath: "/images/logos/typescript.svg" },
+  { imgPath: "/images/logos/python.svg" },
+  { imgPath: "/images/logos/node.png" },
+  { imgPath: "/images/logos/express.svg" },
+  { imgPath: "/images/logos/django.svg" },
+  { imgPath: "/images/logos/mysql.svg" },
+  { imgPath: "/images/logos/postgresql.svg" },
+  { imgPath: "/images/logos/docker.svg" },
+  { imgPath: "/images/logos/googlecloud.svg" },
+  { imgPath: "/images/logos/tailwindcss.svg" },
+  { imgPath: "/images/logos/linux.svg" },
+  { imgPath: "/images/logos/git.svg" },
+  { imgPath: "/images/logos/cisco.svg" },
+  { imgPath: "/images/logos/prisma.svg" },
+  { imgPath: "/images/logos/three.png" },
 ];
 
 const abilities = [
@@ -90,26 +73,17 @@ const abilities = [
 ];
 
 const techStackImgs = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-  },
+  { name: "TypeScript", imgPath: "/images/logos/typescript.svg" },
+  { name: "Django", imgPath: "/images/logos/django.svg" },
+  { name: "MySQL", imgPath: "/images/logos/mysql.svg" },
+  { name: "PostgreSQL", imgPath: "/images/logos/postgresql.svg" },
+  { name: "Docker", imgPath: "/images/logos/docker.svg" },
+  { name: "Google Cloud", imgPath: "/images/logos/googlecloud.svg" },
+  { name: "Tailwind CSS", imgPath: "/images/logos/tailwindcss.svg" },
+  { name: "Express.js", imgPath: "/images/logos/express.svg" },
+  { name: "Linux", imgPath: "/images/logos/linux.svg" },
+  { name: "Prisma", imgPath: "/images/logos/prisma.svg" },
+  { name: "Cisco Networking", imgPath: "/images/logos/cisco.svg" },
 ];
 
 const techStackIcons = [
@@ -147,7 +121,7 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Lourence delivered high-quality systems under real production pressure in a regulated fintech environment. His ability to own features end-to-end — from build to deployment — was impressive for an intern.",
+    review: "Built fintech infrastructure for Zimbabwe's leading insurer — onboarding portals, bank integrations, and internal tooling under real production pressure.",
     imgPath: "/images/omari-logo.png",
     logoPath: "/images/omari-logo.png",
     title: "IT & Software Development Intern — Old Mutual Zimbabwe (Omari)",
@@ -160,7 +134,7 @@ const expCards = [
     ],
   },
   {
-    review: "Lourence handled multiple client projects simultaneously with professionalism and met every deadline. His technical and design skills made him a valuable contributor from day one.",
+    review: "Delivered client websites and branding across multiple accounts — full-stack development and design work in a fast-paced agency environment.",
     imgPath: "/images/cliopatra-logo.png",
     logoPath: "/images/cliopatra-logo.png",
     title: "Student Intern — Cliopatra Graphics",
@@ -172,19 +146,18 @@ const expCards = [
     ],
   },
   {
-    review: "Pursuing a BSc (Honours) in Computer Science with a 3.39 GPA — Upper Second Class equivalent. Strong results across software engineering, web development, networks, and data structures.",
+    review: "BSc (Hons) Computer Science — 3.39 GPA across 25 modules covering software engineering, networks, web development, and data structures.",
     imgPath: "/images/nust-logo.png",
     logoPath: "/images/nust-logo.png",
     title: "BSc (Honours) Computer Science — NUST",
     date: "2022 - Present (Expected 2027)",
     responsibilities: [
-      "GPA 3.39 / 4.0 — 69% weighted average across 25 modules.",
       "Top results: Intro to CS & Programming (84%), Web Development (83%), Discrete Mathematics (78%).",
       "Completed Industrial Attachment at Old Mutual Zimbabwe (Omari fintech) in 2025–2026.",
     ],
   },
   {
-    review: "Built the academic foundation in Mathematics and Computer Science that underpins all subsequent technical work.",
+    review: "A-Level in Pure Mathematics, Computer Science, and Geography — the academic foundation for university-level CS.",
     imgPath: "/images/sacredheart-logo.png",
     logoPath: "/images/sacredheart-logo.png",
     title: "Advanced Level (A-Level) — Sacred Heart College",
@@ -345,20 +318,29 @@ const certifications = [
 
 const socialImgs = [
   {
-    name: "insta",
-    imgPath: "/images/insta.png",
-  },
-  {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
-    name: "linkedin",
+    name: "LinkedIn",
     imgPath: "/images/linkedin.png",
+    url: "https://www.linkedin.com/in/lourence-ruhwaya-a61884254/",
+  },
+  {
+    name: "Instagram",
+    imgPath: "/images/insta.png",
+    url: "https://www.instagram.com/k_i_n_g_728/",
+  },
+  {
+    name: "Reddit",
+    imgPath: "/images/reddit.svg",
+    url: "https://www.reddit.com/user/K_i_n_g_728/",
+  },
+  {
+    name: "Credly",
+    imgPath: "/images/credly.svg",
+    url: "https://www.credly.com/users/lourence-ruhwaya",
+  },
+  {
+    name: "MonkeyType",
+    imgPath: "/images/monkeytype.svg",
+    url: "https://monkeytype.com/profile/kingloco",
   },
 ];
 
