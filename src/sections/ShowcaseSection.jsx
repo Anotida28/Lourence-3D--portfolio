@@ -49,16 +49,14 @@ const AppShowcase = () => {
         <div className="showcaselayout">
           <div ref={rydeRef} className="first-project-wrapper">
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="Ryde App Interface" />
+              <img src="/images/project1.png" alt="QikNet WiFi Voucher Platform" />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                called Ryde
+                QikNet — WiFi Voucher Sales &amp; Access Management System
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo, & TailwindCSS for a fast,
-                user-friendly experience.
+                A full-stack platform for selling and managing prepaid WiFi hotspot vouchers with integrated EcoCash payments via Paynow. Built with Node.js, TypeScript, Express, and MySQL (Prisma).
               </p>
             </div>
           </div>
@@ -68,17 +66,17 @@ const AppShowcase = () => {
               <div className="image-wrapper bg-[#FFEFDB]">
                 <img
                   src="/images/project2.png"
-                  alt="Library Management Platform"
+                  alt="AI Plant Disease Detection System"
                 />
               </div>
-              <h2>The Library Management Platform</h2>
+              <h2>AI Plant Disease Detection System</h2>
             </div>
 
             <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#FFE7EB]">
-                <img src="/images/project3.png" alt="YC Directory App" />
+              <div className="image-wrapper bg-[#E7F0FF]">
+                <img src="/images/project3.png" alt="Omari IT Help Desk & OMCard" />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>Omari IT Help Desk &amp; OMCard Asset Tracker</h2>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
+    name: "Certifications",
     link: "#testimonials",
   },
 ];
@@ -29,10 +29,10 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 1, suffix: "+", label: "Year Industry Experience" },
+  { value: 30, suffix: "+", label: "Integrations Supported" },
+  { value: 5, suffix: "+", label: "Systems Built & Deployed" },
+  { value: 2, suffix: "", label: "Internships Completed" },
 ];
 
 const logoIconsList = [
@@ -147,55 +147,63 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Lourence brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
+    review: "Lourence delivered high-quality systems under real production pressure in a regulated fintech environment. His ability to own features end-to-end — from build to deployment — was impressive for an intern.",
     imgPath: "/images/exp1.png",
     logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    title: "IT & Software Development Intern — Old Mutual Zimbabwe (Omari)",
+    date: "August 2025 - May 2026",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
+      "Built the merchant and agent onboarding portal for the Omari fintech platform, used to register new businesses and agents.",
+      "Developed integrations between Omari and external banks (ZB Bank, POSB, Stanbic) enabling seamless payments and fund transfers.",
+      "Designed and built the company IT help desk ticketing system and OMCard — an IT stock and asset tracking system replacing manual spreadsheets.",
+      "Administered the corporate Google Workspace domain (omari.co.zw): user provisioning, permissions, security monitoring, and email support.",
     ],
   },
   {
-    review: "Lourence’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
+    review: "Lourence handled multiple client projects simultaneously with professionalism and met every deadline. His technical and design skills made him a valuable contributor from day one.",
     imgPath: "/images/exp2.png",
     logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
+    title: "Student Intern — Cliopatra Graphics",
+    date: "December 2024 - February 2025",
     responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
+      "Developed and designed client websites using Django and React.",
+      "Created branding and marketing materials including logos and promotional content.",
+      "Assisted with bookkeeping and financial data management across multiple client accounts.",
     ],
   },
   {
-    review: "Lourence’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
+    review: "Pursuing a BSc (Honours) in Computer Science with a 3.39 GPA — Upper Second Class equivalent. Strong results across software engineering, web development, networks, and data structures.",
     imgPath: "/images/exp3.png",
     logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
+    title: "BSc (Honours) Computer Science — NUST",
+    date: "2022 - Present (Expected 2027)",
     responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "GPA 3.39 / 4.0 — 69% weighted average across 25 modules.",
+      "Top results: Intro to CS & Programming (84%), Web Development (83%), Discrete Mathematics (78%).",
+      "Completed Industrial Attachment at Old Mutual Zimbabwe (Omari fintech) in 2025–2026.",
+    ],
+  },
+  {
+    review: "Built the academic foundation in Mathematics and Computer Science that underpins all subsequent technical work.",
+    imgPath: "/images/exp1.png",
+    logoPath: "/images/logo1.png",
+    title: "Advanced Level (A-Level) — Sacred Heart College",
+    date: "2021",
+    responsibilities: [
+      "Subjects: Pure Mathematics, Geography, Computer Science, General English.",
+      "Science-focused curriculum that laid the groundwork for university-level Computer Science.",
     ],
   },
 ];
 
 const expLogos = [
   {
-    name: "logo1",
+    name: "Old Mutual Zimbabwe",
     imgPath: "/images/logo1.png",
   },
   {
-    name: "logo2",
+    name: "Cliopatra Graphics",
     imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
   },
 ];
 
@@ -244,6 +252,86 @@ const testimonials = [
   },
 ];
 
+const certifications = [
+  {
+    name: "Google IT Support Professional Certificate",
+    issuer: "Coursera / Google",
+    imgPath: "https://images.credly.com/images/fb97a12f-c0f1-4f37-9b7d-4a830199fe84/GCC_badge_IT_Support_1000x1000.png",
+    date: "Sep 2024",
+    skills: ["IT Support", "Networking", "System Administration", "Security"],
+  },
+  {
+    name: "Google AI Essentials",
+    issuer: "Coursera / Google",
+    imgPath: "https://images.credly.com/images/ea3eec65-ddad-4242-9c59-1defac0fa2d9/image.png",
+    date: "Sep 2024",
+    skills: ["Prompt Engineering", "Responsible AI", "Problem Solving"],
+  },
+  {
+    name: "Introduction to Cybersecurity",
+    issuer: "Cisco",
+    imgPath: "https://images.credly.com/images/af8c6b4e-fc31-47c4-8dcb-eb7a2065dc5b/I2CS__1_.png",
+    date: "Sep 2024",
+    skills: ["Cybersecurity", "Threat Detection", "Network Vulnerabilities"],
+  },
+  {
+    name: "Artificial Intelligence Fundamentals",
+    issuer: "IBM SkillsBuild",
+    imgPath: "https://images.credly.com/images/82b908e1-fdcd-4785-9d32-97f11ccbcf08/image.png",
+    date: "Nov 2024",
+    skills: ["Machine Learning", "Deep Learning", "Neural Networks", "NLP"],
+  },
+  {
+    name: "AI Fundamentals with IBM SkillsBuild",
+    issuer: "Cisco",
+    imgPath: "https://images.credly.com/images/26c21273-c0ab-485b-98a7-f1212dcb82b8/image.png",
+    date: "Nov 2024",
+    skills: ["AI", "Machine Learning", "Computer Vision", "NLP"],
+  },
+  {
+    name: "Ethical Hacker",
+    issuer: "Cisco",
+    imgPath: "https://images.credly.com/images/242902b5-f527-42ad-865e-977c9e1b5b58/image.png",
+    date: "Feb 2025",
+    skills: ["Penetration Testing", "Vulnerability Assessment", "IoT Security"],
+  },
+  {
+    name: "Network Technician Career Path",
+    issuer: "Cisco",
+    imgPath: "https://images.credly.com/images/978f88dc-c247-4093-9d39-6efac3651297/image.png",
+    date: "Aug 2025",
+    skills: ["Networking", "Cisco IOS", "IPv4/IPv6", "Network Troubleshooting"],
+  },
+  {
+    name: "DevOps Essentials",
+    issuer: "Coursera / IBM",
+    imgPath: "https://images.credly.com/images/48847c2a-7b9a-4044-b13d-bb175649904b/image.png",
+    date: "Mar 2026",
+    skills: ["DevOps", "Continuous Integration", "TDD", "Infrastructure as Code"],
+  },
+  {
+    name: "Introduction to Agile Development and Scrum",
+    issuer: "Coursera / IBM",
+    imgPath: "https://images.credly.com/images/61733424-430b-4496-bd3c-cb0c7b9dcd67/image.png",
+    date: "Mar 2026",
+    skills: ["Agile", "Scrum", "Kanban", "Sprint Planning"],
+  },
+  {
+    name: "Containers & Kubernetes Essentials",
+    issuer: "Coursera / IBM",
+    imgPath: "https://images.credly.com/images/fadae326-142d-4855-a42f-f0b07e65eac1/image.png",
+    date: "Mar 2026",
+    skills: ["Kubernetes", "Containers", "IBM Cloud", "Docker"],
+  },
+  {
+    name: "Application Development using Microservices and Serverless",
+    issuer: "Coursera / IBM",
+    imgPath: "https://images.credly.com/images/eaaf4a45-b93e-41d1-91d3-d331c6210314/image.png",
+    date: "Apr 2026",
+    skills: ["Microservices", "Serverless", "REST", "Flask", "GraphQL"],
+  },
+];
+
 const socialImgs = [
   {
     name: "insta",
@@ -270,6 +358,7 @@ export {
   counterItems,
   expCards,
   expLogos,
+  certifications,
   testimonials,
   socialImgs,
   techStackIcons,

@@ -82,7 +82,7 @@ section {
   }
 
   .hero-layout {
-    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+    @apply relative z-10 xl:mt-20 mt-32 flex xl:flex-row flex-col xl:items-center items-start justify-between gap-10 md:px-20 px-5 xl:min-h-dvh min-h-[80vh] py-20 xl:py-0;
   }
 
   .hero-text {
@@ -101,6 +101,13 @@ section {
 
   .hero-3d-layout {
     @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+  }
+
+  .hero-3d-container {
+    @apply xl:w-[48%] w-full xl:h-[70vh] h-[50vh] flex-none rounded-3xl overflow-hidden cursor-grab;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
 
   .navbar {
