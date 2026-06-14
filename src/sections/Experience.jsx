@@ -67,8 +67,12 @@ const Experience = () => {
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
                   <GlowCard card={card}>
-                    <div>
-                      <img src={card.imgPath} alt="exp-img" />
+                    <div className="flex items-center gap-3 mt-2">
+                      <img
+                        src={card.imgPath}
+                        alt="company logo"
+                        className="h-10 w-auto object-contain"
+                      />
                     </div>
                   </GlowCard>
                 </div>
@@ -81,7 +85,11 @@ const Experience = () => {
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       {card.logoPath && (
                         <div className="timeline-logo">
-                          <img src={card.logoPath} alt="logo" className="w-full h-full object-contain p-2 rounded-full" />
+                          <img
+                            src={card.logoPath}
+                            alt="logo"
+                            className={`w-full h-full object-contain rounded-full ${card.logoPath.includes("nust") ? "p-3.5" : "p-2"}`}
+                          />
                         </div>
                       )}
                       <div>

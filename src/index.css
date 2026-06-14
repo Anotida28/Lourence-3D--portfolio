@@ -376,11 +376,11 @@ section {
   width: 2px;
   background: linear-gradient(
     0deg,
-    rgba(69, 222, 196, 0) 0%,
-    #62e0ff 25%,
-    #52aeff 37.51%,
-    #fd5c79 62.83%,
-    #6d45ce 92.91%
+    rgba(26, 111, 181, 0) 0%,
+    #1a6fb5 18%,
+    #f5b800 42%,
+    #e91e8c 65%,
+    #3cb043 92%
   );
 }
 
