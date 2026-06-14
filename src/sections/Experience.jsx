@@ -79,9 +79,11 @@ const Experience = () => {
                       <div className="gradient-line w-1 h-full" />
                     </div>
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
-                      <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
-                      </div>
+                      {card.logoPath && (
+                        <div className="timeline-logo">
+                          <img src={card.logoPath} alt="logo" className="w-full h-full object-contain p-2 rounded-full" />
+                        </div>
+                      )}
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">

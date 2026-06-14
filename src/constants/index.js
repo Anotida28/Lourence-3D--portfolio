@@ -149,7 +149,7 @@ const expCards = [
   {
     review: "Lourence delivered high-quality systems under real production pressure in a regulated fintech environment. His ability to own features end-to-end — from build to deployment — was impressive for an intern.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    logoPath: "/images/omari-logo.png",
     title: "IT & Software Development Intern — Old Mutual Zimbabwe (Omari)",
     date: "August 2025 - May 2026",
     responsibilities: [
@@ -162,7 +162,7 @@ const expCards = [
   {
     review: "Lourence handled multiple client projects simultaneously with professionalism and met every deadline. His technical and design skills made him a valuable contributor from day one.",
     imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
+    logoPath: "/images/cliopatra-logo.png",
     title: "Student Intern — Cliopatra Graphics",
     date: "December 2024 - February 2025",
     responsibilities: [
@@ -174,7 +174,7 @@ const expCards = [
   {
     review: "Pursuing a BSc (Honours) in Computer Science with a 3.39 GPA — Upper Second Class equivalent. Strong results across software engineering, web development, networks, and data structures.",
     imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
+    logoPath: "/images/nust-logo.png",
     title: "BSc (Honours) Computer Science — NUST",
     date: "2022 - Present (Expected 2027)",
     responsibilities: [
@@ -186,7 +186,7 @@ const expCards = [
   {
     review: "Built the academic foundation in Mathematics and Computer Science that underpins all subsequent technical work.",
     imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
+    logoPath: "/images/sacredheart-logo.png",
     title: "Advanced Level (A-Level) — Sacred Heart College",
     date: "2021",
     responsibilities: [
