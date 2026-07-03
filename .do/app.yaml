@@ -1,0 +1,9 @@
+name: lourence-3d-portfolio
+static_sites:
+  - name: portfolio
+    github:
+      repo: Anotida28/Lourence-3D--portfolio
+      branch: main
+      deploy_on_push: true
+    build_command: npm run build
+    output_dir: dist
