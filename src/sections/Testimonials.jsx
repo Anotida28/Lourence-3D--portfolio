@@ -21,7 +21,7 @@ const Testimonials = () => {
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="My Certifications"
-          sub=""
+          sub="🏅 Verified Credentials"
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
@@ -29,6 +29,8 @@ const Testimonials = () => {
             <button
               key={index}
               onClick={() => setSelected(cert)}
+              data-reveal
+              data-reveal-delay={(index % 3) * 0.1}
               className="card-border rounded-xl p-6 flex gap-5 items-start hover:border-white-50 transition-all duration-300 hover:scale-[1.02] text-left w-full cursor-pointer"
             >
               <img
@@ -59,11 +61,11 @@ const Testimonials = () => {
       {/* Modal */}
       {selected && (
         <div
-          className="fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm px-5"
+          className="modal-backdrop fixed inset-0 z-[200] flex items-center justify-center bg-black/70 backdrop-blur-sm px-5"
           onClick={() => setSelected(null)}
         >
           <div
-            className="bg-black-100 border border-black-50 rounded-2xl p-8 max-w-lg w-full relative max-h-[90vh] overflow-y-auto"
+            className="modal-card bg-black-100 border border-black-50 rounded-2xl p-8 max-w-lg w-full relative max-h-[90vh] overflow-y-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close button */}

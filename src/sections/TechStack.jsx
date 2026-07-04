@@ -8,7 +8,7 @@ const TechStack = () => {
         <div className="md:px-10 px-5">
           <TitleHeader
             title="How I Can Contribute & My Key Skills"
-            sub=""
+            sub="🤝 The Tools I Work With"
           />
         </div>
         <LogoShowcase />

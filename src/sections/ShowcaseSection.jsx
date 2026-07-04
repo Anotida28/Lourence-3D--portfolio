@@ -3,7 +3,17 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+import TitleHeader from "../components/TitleHeader";
+
 gsap.registerPlugin(ScrollTrigger);
+
+const LiveChip = () => (
+  <span className="live-chip">
+    <span className="size-1.5 rounded-full bg-green-400 animate-pulse" />
+    View Live
+    <span aria-hidden="true">↗</span>
+  </span>
+);
 
 const AppShowcase = () => {
   const sectionRef = useRef(null);
@@ -46,38 +56,63 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
+        <TitleHeader
+          title="Featured Client Projects"
+          sub="🚀 Real businesses, live on the web"
+        />
         <div className="showcaselayout">
-          <div ref={rydeRef} className="first-project-wrapper">
+          <a
+            href="https://king-prawn-app-xu6ww.ondigitalocean.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ref={rydeRef}
+            className="first-project-wrapper"
+          >
             <div className="image-wrapper">
-              <img src="/images/project1.png" alt="QikNet WiFi Voucher Platform" />
+              <img src="/images/libratech-shot.png" alt="Libratech Electrical" />
+              <LiveChip />
             </div>
             <div className="text-content">
               <h2>
-                QikNet — WiFi Voucher Sales &amp; Access Management System
+                Libratech Electrical — Contracting &amp; Retail Site
               </h2>
               <p className="text-white-50 md:text-xl">
-                A full-stack platform for selling and managing prepaid WiFi hotspot vouchers with integrated EcoCash payments via Paynow. Built with Node.js, TypeScript, Express, and MySQL (Prisma).
+                A business website for a Gweru-based electrical contractor and retailer covering residential, commercial, agricultural, and powerline work, with quote requests and WhatsApp integration.
               </p>
             </div>
-          </div>
+          </a>
 
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={libraryRef}>
-              <div className="image-wrapper bg-[#FFEFDB]">
+          <div className="project-list-wrapper">
+            <a
+              href="https://oyster-app-w8ack.ondigitalocean.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project"
+              ref={libraryRef}
+            >
+              <div className="image-wrapper">
                 <img
-                  src="/images/project2.png"
-                  alt="AI Plant Disease Detection System"
+                  src="/images/midsteel-shot.png"
+                  alt="Midsteel — Industrial Wear Parts Supplier"
                 />
+                <LiveChip />
               </div>
-              <h2>AI Plant Disease Detection System</h2>
-            </div>
+              <h2>Midsteel — Wear Parts &amp; Castings Supplier</h2>
+            </a>
 
-            <div className="project" ref={ycDirectoryRef}>
-              <div className="image-wrapper bg-[#E7F0FF]">
-                <img src="/images/project3.png" alt="Omari IT Help Desk & OMCard" />
+            <a
+              href="https://shark-app-gtl9c.ondigitalocean.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project"
+              ref={ycDirectoryRef}
+            >
+              <div className="image-wrapper">
+                <img src="/images/gramlex-shot.png" alt="Gramlex Investments" />
+                <LiveChip />
               </div>
-              <h2>Omari IT Help Desk &amp; OMCard Asset Tracker</h2>
-            </div>
+              <h2>Gramlex Investments — Steel &amp; Infrastructure Supply</h2>
+            </a>
           </div>
         </div>
       </div>
