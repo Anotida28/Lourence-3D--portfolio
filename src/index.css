@@ -328,6 +328,44 @@ section {
     }
   }
 
+  .toast-wrapper {
+    @apply fixed z-[150] left-1/2 -translate-x-1/2 bottom-6 md:left-auto md:right-6 md:translate-x-0
+      w-[calc(100%-2.5rem)] md:w-auto max-w-sm;
+  }
+
+  .toast {
+    @apply flex items-start gap-3 px-5 py-4 rounded-xl border backdrop-blur-md shadow-lg;
+    animation: toast-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+
+  .toast-success {
+    @apply bg-[#0d1f16]/95 border-green-500/30;
+  }
+
+  .toast-error {
+    @apply bg-[#2a1414]/95 border-red-500/30;
+  }
+
+  .toast-icon {
+    @apply flex-none flex items-center justify-center size-6 rounded-full text-sm font-bold mt-0.5;
+  }
+
+  .toast-success .toast-icon {
+    @apply bg-green-500/20 text-green-400;
+  }
+
+  .toast-error .toast-icon {
+    @apply bg-red-500/20 text-red-400;
+  }
+
+  .toast-message {
+    @apply text-white-50 text-sm leading-snug flex-1;
+  }
+
+  .toast-close {
+    @apply flex-none text-white-50/60 hover:text-white text-xs mt-0.5 transition-colors;
+  }
+
   .footer {
     @apply my-10 md:mt-20 mt-10 text-white-50 px-5 md:px-20 xl:px-20 flex items-center justify-center;
 
@@ -499,10 +537,26 @@ section {
   animation: modal-card-in 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
+/* Contact form toast */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Respect users who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .marquee-box,
   .wrapper {
+    animation: none;
+  }
+
+  .toast {
     animation: none;
   }
 

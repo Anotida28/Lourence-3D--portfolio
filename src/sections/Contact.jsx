@@ -1,17 +1,27 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 
 import TitleHeader from "../components/TitleHeader";
+import Toast from "../components/Toast";
 import ContactExperience from "../components/models/contact/ContactExperience";
+
+const TOAST_DURATION = 5000;
 
 const Contact = () => {
   const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState(null); // { status: "success" | "error", message: string }
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (!toast) return;
+    const timer = setTimeout(() => setToast(null), TOAST_DURATION);
+    return () => clearTimeout(timer);
+  }, [toast]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +30,8 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Show loading state
+    setLoading(true);
+    setToast(null);
 
     try {
       await emailjs.sendForm(
@@ -30,12 +41,19 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       );
 
-      // Reset form and stop loading
       setForm({ name: "", email: "", message: "" });
+      setToast({
+        status: "success",
+        message: "Message sent! I'll get back to you soon.",
+      });
     } catch (error) {
-      console.error("EmailJS Error:", error); // Optional: show toast
+      console.error("EmailJS Error:", error);
+      setToast({
+        status: "error",
+        message: "Something went wrong. Please try again or email me directly.",
+      });
     } finally {
-      setLoading(false); // Always stop loading, even on error
+      setLoading(false);
     }
   };
 
@@ -93,7 +111,7 @@ const Contact = () => {
                   />
                 </div>
 
-                <button type="submit">
+                <button type="submit" disabled={loading}>
                   <div className="cta-button group">
                     <div className="bg-circle" />
                     <p className="text">
@@ -114,6 +132,12 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
+      <Toast
+        status={toast?.status}
+        message={toast?.message}
+        onClose={() => setToast(null)}
+      />
     </section>
   );
 };
