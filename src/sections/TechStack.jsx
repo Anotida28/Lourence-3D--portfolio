@@ -6,10 +6,7 @@ const TechStack = () => {
     <div id="skills" className="flex-center section-padding">
       <div className="w-full h-full">
         <div className="md:px-10 px-5">
-          <TitleHeader
-            title="How I Can Contribute & My Key Skills"
-            sub="🤝 The Tools I Work With"
-          />
+          <TitleHeader title="How I Can Contribute & My Key Skills" />
         </div>
         <LogoShowcase />
       </div>

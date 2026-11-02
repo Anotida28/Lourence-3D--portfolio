@@ -19,10 +19,7 @@ const Testimonials = () => {
   return (
     <section id="certifications" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="My Certifications"
-          sub="🏅 Verified Credentials"
-        />
+        <TitleHeader title="My Certifications" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-16">
           {certifications.map((cert, index) => (

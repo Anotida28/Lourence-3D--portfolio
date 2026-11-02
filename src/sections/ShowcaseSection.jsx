@@ -56,10 +56,7 @@ const AppShowcase = () => {
   return (
     <div id="work" ref={sectionRef} className="app-showcase">
       <div className="w-full">
-        <TitleHeader
-          title="Featured Client Projects"
-          sub="🚀 Real businesses, live on the web"
-        />
+        <TitleHeader title="Featured Client Projects" />
         <div className="showcaselayout">
           <a
             href="https://king-prawn-app-xu6ww.ondigitalocean.app/"

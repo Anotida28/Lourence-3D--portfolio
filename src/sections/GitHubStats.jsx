@@ -305,7 +305,7 @@ const GitHubStats = () => {
   return (
     <section id="github" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader title="My GitHub Activity" sub="💻 Open Source & Code" />
+        <TitleHeader title="My GitHub Activity" />
 
         <div className="mt-16 flex flex-col gap-6" data-reveal>
           {failed || (data && !summary) ? (

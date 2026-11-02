@@ -57,10 +57,7 @@ const Experience = () => {
       className="flex-center section-padding xl:px-0"
     >
       <div className="w-full h-full md:px-20 px-5">
-        <TitleHeader
-          title="My Works, Experience & Education"
-          sub="💼 Career & Education Journey"
-        />
+        <TitleHeader title="My Works, Experience & Education" />
         <div className="md:mt-32 mt-16 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
             {expCards.map((card) => (
@@ -95,7 +92,7 @@ const Experience = () => {
                       <div>
                         <h1 className="font-semibold md:text-3xl text-2xl">{card.title}</h1>
                         <p className="my-5 text-white-50">
-                          🗓️&nbsp;{card.date}
+                          {card.date}
                         </p>
                         <p className="text-[#839CB5] italic">
                           {card.date === "2021" || card.title.includes("NUST") ? "Details" : "Responsibilities"}
