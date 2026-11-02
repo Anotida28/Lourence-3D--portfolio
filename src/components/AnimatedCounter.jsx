@@ -46,12 +46,12 @@ const AnimatedCounter = () => {
             ref={(el) => el && (countersRef.current[index] = el)}
             data-reveal
             data-reveal-delay={index * 0.1}
-            className="card-border rounded-lg p-10 flex flex-col justify-center transition-colors duration-300 hover:border-blue-50/40"
+            className="card-border rounded-lg md:p-10 p-5 flex flex-col justify-center transition-colors duration-300 hover:border-blue-50/40"
           >
-            <div className="counter-number text-white-50 text-5xl font-bold mb-2">
+            <div className="counter-number text-white-50 md:text-5xl text-4xl font-bold mb-2">
               0 {item.suffix}
             </div>
-            <div className="text-white-50 text-lg">{item.label}</div>
+            <div className="text-white-50 md:text-lg text-sm">{item.label}</div>
           </div>
         ))}
       </div>

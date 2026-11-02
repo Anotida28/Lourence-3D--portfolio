@@ -5,7 +5,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="flex flex-col justify-center">
-          <p>Terms & Conditions</p>
+          <a
+            href="#"
+            className="text-center md:text-start hover:text-white transition-colors"
+          >
+            Back to top ↑
+          </a>
         </div>
         <div className="socials flex-wrap">
           {socialImgs.map((socialImg, index) => (

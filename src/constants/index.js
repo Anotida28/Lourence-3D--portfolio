@@ -12,6 +12,10 @@ const navLinks = [
     link: "#skills",
   },
   {
+    name: "GitHub",
+    link: "#github",
+  },
+  {
     name: "Certifications",
     link: "#certifications",
   },
@@ -317,6 +321,11 @@ const certifications = [
 ];
 
 const socialImgs = [
+  {
+    name: "GitHub",
+    imgPath: "/images/github.svg",
+    url: "https://github.com/Anotida28",
+  },
   {
     name: "LinkedIn",
     imgPath: "/images/linkedin.png",

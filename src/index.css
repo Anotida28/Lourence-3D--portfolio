@@ -24,6 +24,7 @@ section {
 #work,
 #experience,
 #skills,
+#github,
 #certifications,
 #contact {
   scroll-margin-top: 5.5rem;
@@ -83,7 +84,7 @@ section {
   }
 
   .grid-4-cols {
-    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+    @apply grid grid-cols-2 xl:grid-cols-4 md:gap-7 gap-4;
   }
 
   .grid-12-cols {
