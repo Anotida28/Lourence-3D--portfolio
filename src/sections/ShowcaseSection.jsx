@@ -19,7 +19,6 @@ const AppShowcase = () => {
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
-  const ycDirectoryRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -30,7 +29,7 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+    const cards = [rydeRef.current, libraryRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -59,7 +58,7 @@ const AppShowcase = () => {
         <TitleHeader title="Featured Client Projects" />
         <div className="showcaselayout">
           <a
-            href="https://king-prawn-app-xu6ww.ondigitalocean.app/"
+            href="https://libratech-2-0.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             ref={rydeRef}
@@ -81,7 +80,7 @@ const AppShowcase = () => {
 
           <div className="project-list-wrapper">
             <a
-              href="https://oyster-app-w8ack.ondigitalocean.app/"
+              href="https://saint-prince-juz6.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="project"
@@ -89,26 +88,12 @@ const AppShowcase = () => {
             >
               <div className="image-wrapper">
                 <img
-                  src="/images/midsteel-shot.png"
-                  alt="Midsteel — Industrial Wear Parts Supplier"
+                  src="/images/saint-prince-shot.png"
+                  alt="Saint Prince — Rotating Equipment & Heat Exchanger Engineering"
                 />
                 <LiveChip />
               </div>
-              <h2>Midsteel — Wear Parts &amp; Castings Supplier</h2>
-            </a>
-
-            <a
-              href="https://shark-app-gtl9c.ondigitalocean.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project"
-              ref={ycDirectoryRef}
-            >
-              <div className="image-wrapper">
-                <img src="/images/gramlex-shot.png" alt="Gramlex Investments" />
-                <LiveChip />
-              </div>
-              <h2>Gramlex Investments — Steel &amp; Infrastructure Supply</h2>
+              <h2>Saint Prince — Turbine, Pump &amp; Heat Exchanger Engineering</h2>
             </a>
           </div>
         </div>
