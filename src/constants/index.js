@@ -34,8 +34,8 @@ const words = [
 
 const counterItems = [
   { value: 1, suffix: "+", label: "Year Industry Experience (Old Mutual)" },
-  { value: 30, suffix: "+", label: "Bank & Payment Integrations Built" },
-  { value: 5, suffix: "+", label: "Full-Stack Systems Built & Deployed" },
+  { value: 30, suffix: "+", label: "Partner & Bank Integrations Supported" },
+  { value: 6, suffix: "+", label: "Internal Systems Delivered End-to-End" },
   { value: 2, suffix: "", label: "Internships Completed" },
 ];
 
@@ -129,11 +129,11 @@ const expCards = [
     imgPath: "/images/omari-logo.png",
     logoPath: "/images/omari-logo.png",
     title: "IT & Software Development Intern — Old Mutual Zimbabwe (Omari)",
-    date: "August 2025 - May 2026",
+    date: "August 2025 - August 2026",
     responsibilities: [
-      "Built the merchant and agent onboarding portal for the Omari fintech platform, used to register new businesses and agents.",
-      "Developed integrations between Omari and external banks (ZB Bank, POSB, Stanbic) enabling seamless payments and fund transfers.",
-      "Designed and built the company IT help desk ticketing system and OMCard — an IT stock and asset tracking system replacing manual spreadsheets.",
+      "Delivered six internal systems end-to-end: IT help desk ticketing, OMCard stock and asset management, the Trolley Dash loyalty platform, a remittance centre performance tracker, a wallet analytics dashboard, and the merchant and agent onboarding portal.",
+      "Supported 30+ merchant, partner, and bank integrations (ZB Bank, POSB, Stanbic, ZIMRA): API key provisioning, UAT support, and live troubleshooting of failed transactions.",
+      "Ran UAT across three Omari mobile app releases and authored the UAT sign-off for the Omari Agent API upgrade (v2 → v2.2.0).",
       "Administered the corporate Google Workspace domain (omari.co.zw): user provisioning, permissions, security monitoring, and email support.",
     ],
   },

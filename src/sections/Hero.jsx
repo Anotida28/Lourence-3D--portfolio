@@ -52,7 +52,7 @@ const Hero = () => {
 
             <div className="flex flex-col gap-2 max-w-lg relative z-10 pointer-events-none">
               <p className="text-white-50 md:text-xl">
-                Hi, I’m Lourence Ruhwaya — a full-stack developer and CS student at NUST Zimbabwe, building web apps, AI tools, and cloud systems.
+                Hi, I’m Lourence Ruhwaya — a full-stack developer and final-year CS student at NUST Zimbabwe, focused on backend systems, fintech integrations, and applied AI.
               </p>
               <p className="text-white-50 md:text-xl">
                 Passionate about cybersecurity and crafting software that solves real problems.
