@@ -19,6 +19,7 @@ const AppShowcase = () => {
   const sectionRef = useRef(null);
   const rydeRef = useRef(null);
   const libraryRef = useRef(null);
+  const ycDirectoryRef = useRef(null);
 
   useGSAP(() => {
     // Animation for the main section
@@ -29,7 +30,7 @@ const AppShowcase = () => {
     );
 
     // Animations for each app showcase
-    const cards = [rydeRef.current, libraryRef.current];
+    const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
 
     cards.forEach((card, index) => {
       gsap.fromTo(
@@ -94,6 +95,20 @@ const AppShowcase = () => {
                 <LiveChip />
               </div>
               <h2>Saint Prince — Turbine, Pump &amp; Heat Exchanger Engineering</h2>
+            </a>
+
+            <a
+              href="https://gramlex-steel-solutions.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project"
+              ref={ycDirectoryRef}
+            >
+              <div className="image-wrapper">
+                <img src="/images/gramlex-shot.png" alt="Gramlex Investments" />
+                <LiveChip />
+              </div>
+              <h2>Gramlex Investments — Steel &amp; Infrastructure Supply</h2>
             </a>
           </div>
         </div>
