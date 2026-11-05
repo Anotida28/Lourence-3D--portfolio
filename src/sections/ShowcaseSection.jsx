@@ -59,42 +59,42 @@ const AppShowcase = () => {
         <TitleHeader title="Featured Client Projects" />
         <div className="showcaselayout">
           <a
-            href="https://libratech-2-0.vercel.app/"
+            href="https://saint-prince-juz6.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             ref={rydeRef}
             className="first-project-wrapper"
           >
             <div className="image-wrapper">
-              <img src="/images/libratech-shot.png" alt="Libratech Electrical" />
+              <img
+                src="/images/saint-prince-shot.png"
+                alt="Saint Prince — Rotating Equipment & Heat Exchanger Engineering"
+              />
               <LiveChip />
             </div>
             <div className="text-content">
               <h2>
-                Libratech Electrical — Contracting &amp; Retail Site
+                Saint Prince — Turbine, Pump &amp; Heat Exchanger Engineering
               </h2>
               <p className="text-white-50 md:text-xl">
-                A business website for a Gweru-based electrical contractor and retailer covering residential, commercial, agricultural, and powerline work, with quote requests and WhatsApp integration.
+                A company website for a Heidelberg, Gauteng engineering firm that installs, overhauls and maintains steam turbines, pumps, fans and gearboxes, and manufactures heat exchangers for plants across Southern Africa, with services, industries, project gallery and quote requests.
               </p>
             </div>
           </a>
 
           <div className="project-list-wrapper">
             <a
-              href="https://saint-prince-juz6.vercel.app/"
+              href="https://libratech-2-0.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="project"
               ref={libraryRef}
             >
               <div className="image-wrapper">
-                <img
-                  src="/images/saint-prince-shot.png"
-                  alt="Saint Prince — Rotating Equipment & Heat Exchanger Engineering"
-                />
+                <img src="/images/libratech-shot.png" alt="Libratech Electrical" />
                 <LiveChip />
               </div>
-              <h2>Saint Prince — Turbine, Pump &amp; Heat Exchanger Engineering</h2>
+              <h2>Libratech Electrical — Contracting &amp; Retail Site</h2>
             </a>
 
             <a
