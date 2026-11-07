@@ -19,6 +19,8 @@ const ContactExperience = () => {
 
       <OrbitControls
         enableZoom={false}
+        autoRotate
+        autoRotateSpeed={1.5}
         minPolarAngle={Math.PI / 5}
         maxPolarAngle={Math.PI / 2}
       />
