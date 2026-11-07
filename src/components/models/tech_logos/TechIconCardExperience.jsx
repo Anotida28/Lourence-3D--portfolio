@@ -53,7 +53,7 @@ const TechIconCardExperience = ({ model }) => {
         </group>
       </Float>
 
-      <OrbitControls enableZoom={false} />
+      <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={1.5} />
     </Canvas>
   );
 };

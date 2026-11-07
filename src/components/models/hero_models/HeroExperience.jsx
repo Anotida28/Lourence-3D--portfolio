@@ -19,6 +19,8 @@ const HeroExperience = () => {
       <OrbitControls
         enablePan={false} // Prevents panning of the scene
         enableZoom={!isTablet} // Disables zoom on tablets
+        autoRotate
+        autoRotateSpeed={1.5}
         maxDistance={20} // Maximum distance for zooming out
         minDistance={5} // Minimum distance for zooming in
         minPolarAngle={Math.PI / 5} // Minimum angle for vertical rotation
