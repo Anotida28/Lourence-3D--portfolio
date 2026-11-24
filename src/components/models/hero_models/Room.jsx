@@ -9,6 +9,7 @@ import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
 import SecretSign from "./SecretSign";
+import GraffitiTag from "./GraffitiTag";
 
 export function Room(props) {
   const { nodes, materials } = useGLTF("/models/optimized-room.glb");
@@ -74,6 +75,8 @@ export function Room(props) {
       <SecretSign position={[0.58, 2.4, -2.615]} color="#d4145a">
         CLICK ME
       </SecretSign>
+      {/* Sprayed on the outside of the back wall; plays as the wall turns into view. */}
+      <GraffitiTag position={[-0.2, 2.9, -3.53]} rotation={[0, Math.PI, 0]} />
       <mesh
         geometry={nodes.handls_blinn1_0.geometry}
         material={materials.blinn1}
