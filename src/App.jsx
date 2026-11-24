@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -13,10 +14,11 @@ import ShowcaseSection from "./sections/ShowcaseSection";
 import FeatureCards from "./sections/FeatureCards";
 import Navbar from "./components/NavBar";
 import ScrollProgress from "./components/ScrollProgress";
+import SecretGame from "./SecretGame";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const App = () => {
+const PortfolioApp = () => {
   // Blur-fade reveal for any element tagged with data-reveal.
   // Optional data-reveal-delay staggers siblings.
   useGSAP(() => {
@@ -46,7 +48,7 @@ const App = () => {
             gsap.set(el, { clearProps: "transform,opacity,filter" });
             el.style.removeProperty("transition");
           },
-        }
+        },
       );
     });
   }, []);
@@ -66,6 +68,21 @@ const App = () => {
       <Footer />
     </>
   );
+};
+
+const App = () => {
+  const [path, setPath] = useState(window.location.pathname);
+
+  useEffect(() => {
+    const onPop = () => {
+      setPath(window.location.pathname);
+      window.scrollTo(0, 0);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  return path === "/secret" ? <SecretGame /> : <PortfolioApp />;
 };
 
 export default App;
