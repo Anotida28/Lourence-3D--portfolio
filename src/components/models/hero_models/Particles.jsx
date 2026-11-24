@@ -1,7 +1,7 @@
 import { useRef, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 
-const Particles = ({ count = 200 }) => {
+const Particles = ({ count = 120 }) => {
   const mesh = useRef();
 
   const particles = useMemo(() => {
@@ -48,10 +48,10 @@ const Particles = ({ count = 200 }) => {
         />
       </bufferGeometry>
       <pointsMaterial
-        color="#ffffff"
-        size={0.05}
+        color="#b8c9ff"
+        size={0.035}
         transparent
-        opacity={0.9}
+        opacity={0.55}
         depthWrite={false}
       />
     </points>
