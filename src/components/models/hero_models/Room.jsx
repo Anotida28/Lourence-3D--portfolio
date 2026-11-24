@@ -8,6 +8,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import * as THREE from "three";
+import SecretSign from "./SecretSign";
 
 export function Room(props) {
   const { nodes, materials } = useGLTF("/models/optimized-room.glb");
@@ -69,6 +70,10 @@ export function Room(props) {
         geometry={nodes.emis_lambert1_0.geometry}
         material={materials.lambert1}
       />
+      {/* Sits flush on the right-hand monitor (screen spans x -0.14 to 1.30, z -2.63). */}
+      <SecretSign position={[0.58, 2.4, -2.615]} color="#d4145a">
+        CLICK ME
+      </SecretSign>
       <mesh
         geometry={nodes.handls_blinn1_0.geometry}
         material={materials.blinn1}
